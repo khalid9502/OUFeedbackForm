@@ -1,0 +1,20 @@
+<%@ Page Language="C#" MasterPageFile="~/formMasterPage.master" AutoEventWireup="true" CodeFile="Default2.aspx.cs" Inherits="admin_Default2" Title="Untitled Page" %>
+
+<%@ Register Assembly="WebChart" Namespace="WebChart" TagPrefix="Web" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <br />
+    <br />
+    Graphical Representation of feedback rating given by students through online for Prof/Lecturer: <strong><span style="font-size: 12pt">Prof</span></strong><br />
+    <Web:ChartControl ID="ChartControl1" runat="server" BorderStyle="Outset" BorderWidth="5px" ChartPadding="30" HasChartLegend="False" ShowTitlesOnBackground="False" Height="535px" Width="824px" TopPadding="20" YCustomEnd="6" YCustomStart="0" YValuesInterval="0">
+        <Border Color="CornflowerBlue"  />
+        <YAxisFont StringFormat="Far,Near,Character,LineLimit" />
+        <XTitle Font="Tahoma, 8pt, style=Bold" ForeColor="SteelBlue" StringFormat="Center,Far,Character,LineLimit" />
+        <PlotBackground Angle="90" EndPoint="100, 400" ForeColor="#FFFFC0" Type="LinearGradient" />
+        <XAxisFont StringFormat="Center,Near,Character,LineLimit" />
+        <Background Angle="90" Color="CornflowerBlue" EndPoint="100, 400" ForeColor="#80FF80"
+            Type="LinearGradient" />
+        <ChartTitle Font="Tahoma, 10pt, style=Bold" ForeColor="White" StringFormat="Center,Near,Character,LineLimit" />
+        <YTitle Font="Tahoma, 8pt, style=Bold" ForeColor="SteelBlue" StringFormat="Near,Near,Character,DirectionVertical" />
+    </Web:ChartControl>
+</asp:Content>
+

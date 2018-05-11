@@ -1,0 +1,181 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="formMasterPage.master.cs" Inherits="formMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+   <title>Feed Back Form</title>
+     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css"/>
+     <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!--<center>
+    <div>
+    <h2>
+        <span style="color: black">Department of Computer Science & Engineering</span></h2>
+    <h4>
+        <span style="color: black">University College of Engineering, OU.</span></h4>
+    <h5>
+        <span style="color: black">FEED BACK FORM</span></h5>
+        <hr />
+    </div>
+    </center>-->
+
+        <!--<div class="container grid">
+            <div class="row">
+                <div class="cell img-container"><img src="images/osmania-university.png"/></div>
+                <div class="cell">
+                    <h4><span style="color: black">University College of Engineering</span></h4>
+                </div>
+            </div>
+        </div>-->
+
+    <div >
+        <center>
+             <img src="../../images/UCEfeedback_Title.JPG"/>
+        </center>
+       
+       <!-- <ul class="h-menu bg-Azure" >
+            <li><img src="../../images/osmania-university.png"/></li>
+            <li> <center>
+                <div>
+                    <h2>
+                        <span style="color: black">Department of Computer Science & Engineering</span></h2>
+                    <h4>
+                        <span style="color: black">University College of Engineering, OU.</span></h4>
+                    <h5>
+                        <span style="color: black">FEED BACK FORM</span></h5>
+                        <hr />
+                    </div>
+            </center></li>
+            <li><img src="../../images/osmania-university.png"/></li>
+        </ul>-->
+    </div>
+
+    <div class="text-center">
+        <ul class="h-menu bg-dark fg-white">
+            <li><a  href="">             </a></li>
+            <li><a  href="../../../">Home</a></li>
+            <li>
+                <a href="" class="dropdown-toggle">FeedBack</a>
+                <ul class="d-menu" data-role="dropdown">
+                    <li>
+                        <a href="#" class="dropdown-toggle">BE CSE First Year</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="../../../BE/BE1yr2sem/Default_be1.aspx">Theory</a></li>
+                            <li><a href="../../../BE/BE1yr2sem/Default2_be1.aspx">Practicals</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">BE CSE Second Year</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="../../../BE/BE2yr2sem/Default_be2.aspx">Theory</a></li>
+                            <li><a href="../../../BE/BE2yr2sem/Default2_be2.aspx">Practicals</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">BE CSE Third Year</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="../../../BE/BE3yr2sem/Default_be3.aspx">Theory</a></li>
+                            <li><a href="../../../BE/BE3yr2sem/Default2_be3.aspx">Practicals</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">BE CSE Final Year</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="../../../BE/BE4yr/Default_be4.aspx">Theory</a></li>
+                            <li><a href="../../../BE/BE4yr/Default2_be4.aspx">Practicals</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Mtech CSE First Year</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="../../../Mtech/CSE1yr2sem/Default_mtech1.aspx">Theory</a></li>
+                            <li><a href="../../../Mtech/CSE1yr2sem/Default2_mtech1.aspx">Practicals</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Mtech PDS First Year</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="../../../Mtech/PDS1yr2sem/Default_pds1.aspx">Theory</a></li>
+                            <li><a href="../../../Mtech/PDS1yr2sem/Default2_pds1.aspx">Practicals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../../../admin/admin.aspx">Reports</a></li>
+            <li><a href="">Attendance</a></li>
+        </ul>
+    </div>
+  <!--<div style="float: left;width: 213px;padding-right: 10px;" id="sidemenu">
+  
+         
+                <div id="master_sidebarSamples" class="sidebarcontent">
+                     <asp:TreeView ID="TreeView1" runat="server" Font-Size="Medium" ExpandDepth="30" BackColor="White" BorderColor="Desktop" BorderStyle="Dotted" ImageSet="BulletedList4" ShowExpandCollapse="False" OnSelectedNodeChanged="TreeView1_SelectedNodeChanged">
+        <Nodes>
+            <asp:TreeNode Text="BE CSE" Value="BE CSE">
+                <asp:TreeNode Text="BE CSE First Year" Value="BE CSE First Year">
+                    <asp:TreeNode NavigateUrl="~/BE/BE1yr2sem/Default_be1.aspx" Text="Theory" Value="Theory" ></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/BE/BE1yr2sem/Default2_be1.aspx" Text="Practicals" Value="Practicals">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="BE CSE Second Year" Value="BE CSE Second Year">
+                    <asp:TreeNode NavigateUrl="~/BE/BE2yr2sem/Default_be2.aspx" Text="Theory" Value="Theory"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/BE/BE2yr2sem/Default2_be2.aspx" Text="Practicals" Value="Practicals">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="BE CSE Third Year" Value="BE CSE Thrid Year">
+                    <asp:TreeNode NavigateUrl="~/BE/BE3yr2sem/Default_be3.aspx" Text="Theory" Value="Theory"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/BE/BE3yr2sem/Default2_be3.aspx" Text="Practicals" Value="Practicals">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="BE CSE Fourth Year" Value="BE CSE Fourth Year">
+                    <asp:TreeNode NavigateUrl="~/BE/BE4yr/Default_be4.aspx" Text="Theory" Value="Theory"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/BE/BE4yr/Default2_be4.aspx" Text="Practicals" Value="Practicals">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </asp:TreeNode>
+             <asp:TreeNode Text="M Tech CSE" Value="M Tech CSE">
+                <asp:TreeNode Text="CSE First Year" Value="CSE First Year">
+                    <asp:TreeNode NavigateUrl="~/MTech/CSE1yr2sem/Default_mtech1.aspx" Text="Theory" Value="Theory">
+                    </asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/MTech/CSE1yr2sem/Default2_mtech1.aspx" Text="Practicals" Value="Practicals">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </asp:TreeNode>
+            <asp:TreeNode Text="M Tech PDS" Value="M Tech PDS">
+                <asp:TreeNode Text="PDS First Year" Value="New Node">
+                    <asp:TreeNode NavigateUrl="~/MTech/PDS1yr2sem/Default_pds1.aspx" Text="Theory" Value="Theory">
+                    </asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/MTech/PDS1yr2sem/Default2_pds1.aspx" Text="Practicals" Value="Practicals">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/admin/admin.aspx" Text="Reports" Value="Reports">
+                </asp:TreeNode>
+        </Nodes>
+        <ParentNodeStyle Font-Size="Large" Font-Bold="False" />
+    <RootNodeStyle Font-Size="Larger" />
+                         <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                         <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px"
+                             VerticalPadding="0px" />
+                         <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px"
+                             NodeSpacing="0px" VerticalPadding="0px" />
+    </asp:TreeView>
+                </div>
+            </div>-->
+
+        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">.</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">.</asp:LinkButton>
+    
+ 
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+       
+     </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+</body>
+</html>

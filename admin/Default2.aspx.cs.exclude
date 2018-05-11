@@ -1,0 +1,59 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using WebChart;
+using System.Drawing.Drawing2D;
+using System.Drawing;
+
+public partial class admin_Default2 : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Chart chart = new ColumnChart();
+        chart.Line.Color = Color.Blue;
+        chart.Data.Add(new ChartPoint("", 0));
+      //  chart.Data.Add(new ChartPoint("Rate the course in general", 0));
+      //  chart.Data.Add(new ChartPoint("Rate the Instructor", 0));
+      //  chart.Data.Add(new ChartPoint("Quality of assignment for learning subject matter", 0));
+      //  chart.Data.Add(new ChartPoint("Class test papers/solutions to assignment discussed?", 0));
+      //  chart.Data.Add(new ChartPoint("Effectiveness of the teacher in preparation for exams", 0));
+      //  chart.Data.Add(new ChartPoint("Did the course improved your understanding of concepts and principles?", 0));
+      //  chart.Data.Add(new ChartPoint("Instructor's knowledge of the subject", 0));
+      //  chart.Data.Add(new ChartPoint("Was the instructor enthusiastic about teaching?", 0));
+      //  chart.Data.Add(new ChartPoint("Did the Instructor make good use of Examples & Illustrations?", 0));
+      //  chart.Data.Add(new ChartPoint("Interaction with the students", 0));
+      //  chart.Data.Add(new ChartPoint("To what extent in the teacher a role model", 0));
+      ////  ChartControl1.XAxisFont.StringFormat.FormatFlags = StringFormatFlags.NoWrap | StringFormatFlags.DirectionVertical; 
+
+        Chart chart1 = new ColumnChart();
+        chart1.Line.Color = Color.Blue;
+        chart1.Fill.Color = Color.CornflowerBlue;
+        float q1,q2,q3,q4,q5;
+        q1 = (float)5.12;
+        q2 = (float)5.12;
+        q3 = (float)5.12;
+        q4 = (float)5.12;
+        q5 = (float)5.12;
+
+       // chart.Data.Add(new ChartPoint("", 0));
+        chart1.Data.Add(new ChartPoint("Rate the course in general", q1));
+        chart1.Data.Add(new ChartPoint("Rate the Instructors in the lab", q2));
+        chart1.Data.Add(new ChartPoint("Did the instructor help you to understand the experiment", q3));
+        chart1.Data.Add(new ChartPoint("Have the experiments designed, helped you in understanding the theoretical concepts", q4));
+        chart1.Data.Add(new ChartPoint("Has the course helped you in gaining confidence in doing practical work", q5));
+        chart1.DataLabels.Visible = true;
+      
+        ChartControl1.Charts.Add(chart1);
+        ChartControl1.Charts.Add(chart);
+        ChartControl1.RedrawChart();
+        ChartControl1.Visible = true;
+
+    }
+}
